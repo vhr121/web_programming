@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>square of a number</title>
+    </head>
+    
+    <body>
+        <center><h1>Number and its Square</h1></center>
+        <script>
+            
+                function squaren(num)
+                {
+                    var square="The number and its square are\n";
+                    
+                    for(i=1;i<=num;i++)
+                    {
+                        square+="number="+i+"\tsquare="+i*i+"\n";
+                    }
+                    return square;
+                }
+                
+                var num=prompt("Enter the number:");
+                    
+                 square=squaren(num)
+               
+               alert(square);
+               
+                
+                
+                
+        
+        
+        </script>
+        
+    </body>
+    
+</html>
