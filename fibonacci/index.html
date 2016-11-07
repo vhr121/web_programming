@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Fibonacci</title>
+    </head>
+    <body>
+        <center><h1>Fibonacci Number generator</h1></center>
+        <script>
+            document.write("<center>");
+                function fibonacci(num)
+                {
+                    var fib1=0,fib2=1;
+                    document.write(fib1+"<br>");
+                    document.write(fib2+"<br>");
+                    for(i=0;i<num;i++)
+                    {
+                        
+                        var fib=fib1+fib2;
+                        fib1=fib2;
+                        fib2=fib;
+                        document.write(fib+"<br>");
+                    }
+                 }
+                var num=prompt("Enter the Number:");
+                
+                fibonacci(num);
+                
+           document.write("</center>");
+        </script>
+        
+    </body>
+    
+</html>
