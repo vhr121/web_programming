@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf8"?>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>usn_sem_validation</title>
+	<script type="text/javascript">
+
+		function validate()
+		{
+			var exp1=/[1-4][A-Z][A-Z][0-9][0-9][A-Z][A-Z][0-9][0-9][0-9]/;
+			var exp2=/[1-8]/;
+
+
+			usn=document.getElementsByName("usn")[0].value;
+			sem=document.getElementsByName("sem")[0].value;
+
+			if(exp1.test(usn)&&exp2.test(sem))
+			{
+				alert("valid usn and sem");
+
+			}
+			else
+			{
+				alert("invalid usn or sem");
+			}
+
+		}
+	</script>
+</head>
+<body>
+<center>
+	<h1>Usn and Sem Validation</h1>
+	<form>
+		USN:<input type="text" name="usn"><br><br>
+		Sem:<input type="text" name="sem"><br><br>
+		<button onclick="validate()">Check</button>
+	</form>
+
+</center>
+</body>
+</html>
