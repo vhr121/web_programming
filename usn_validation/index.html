@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>usn validation</title>
+</head>
+<body>
+<center>
+<h1>USN validation</h1>
+<form>
+	<script type="text/javascript">
+		function validate()
+		{
+			var usn=document.getElementsByName("usn")[0].value;
+			exp=/[1-4][A-Z][A-Z][0-9][0-9][A-Z][A-Z][0-9][0-9][0-9]/;
+			if(exp.test(usn))
+			{
+				alert("usn is valid!!");
+			}
+			else
+			{
+				alert("usn is Invalid please re-enter");
+			}
+
+		}
+	</script>
+	USN:<input type="text" name="usn">
+	<button onclick="validate()">check</button>
+
+</form>
+</center>
+</body>
+</html>
