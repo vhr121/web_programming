@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>r_stack</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		#para1
+		{
+			position: absolute;
+			left: 100px;
+			top:100px;
+			width: 50%;
+			background-color: red;
+			border:2px;
+			border-style: solid;
+			z-index:0;
+		}
+		#para2
+		{
+			position: absolute;
+			left: 120px;
+			top:120px;
+			width: 50%;
+			background-color: green;
+			border:2px;
+			border-style: solid;
+			z-index: 10;
+		}
+		#para3
+		{
+			position: absolute;
+			left: 140px;
+			top:140px;
+			width: 50%;
+			background-color: blue;
+			border:2px;
+			border-style: solid;
+			z-index: 20;
+		}
+	</style>
+
+	<script type="text/javascript">
+	var old="para1";
+	function hello(para)
+	{
+		var newtop=document.getElementById(para).style;
+		newtop.zIndex=40;
+		oldtop=document.getElementById(old).style;
+		oldtop.zIndex=0;
+		old=para;
+
+	}
+	
+</script>
+</head>
+<body>
+
+<div id="para1" onmouseover="hello('para1')">
+	HyperText Markup Language (HTML) is the standard markup language for creating web pages and web applications. With Cascading Style Sheets (CSS), and JavaScript, it forms a triad of cornerstone technologies for the World Wide Web.[1] Web browsers receive HTML documents from a webserver or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the documents
+	
+</div>
+<div id="para2" onmouseover="hello('para2')">
+	ascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language.[1] Although most often used to set the visual style of web pages and user interfaces written in HTML and XHTML, the language can be applied to any XML document, including plain XML, SVG and XUL, and is applicable to rendering in speech, or on other media. Along with HTML and JavaScript, CSS is a cornerstone technology used by most websites to create visually engaging webpages, user interfaces for web applications, and user interfaces for many mobile applications.[2]
+</div>
+
+<div id="para3" onmouseover="hello('para3')">
+	In computing, JavaScript (/ˈdʒævəˌskrɪpt/[5]) is a high-level, dynamic, untyped, and interpreted programming language.[6] It has been standardized in the ECMAScript language specification.[7] Alongside HTML and CSS, JavaScript is one of the three core technologies of World Wide Web content production; the majority of websites employ it, and all modern Web browsers supported it without the need for plug-ins.[6] JavaScript is prototype-based with first-class functions, making it a multi-paradigm language, supporting object-oriented,[8] imperative, and functional programming styles.[6] It has an API for working with text, arrays, dates and regular expressions, but does not include any I/O, such as networking, storage, or graphics facilities, relying for these upon the host environment in which it is embedded.[7]
+</div>
+
+
+</body>
+</html>
