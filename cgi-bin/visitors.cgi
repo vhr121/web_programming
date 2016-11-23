@@ -1,7 +1,7 @@
 #! /usr/bin/perl
 use CGI ":standard";
 print header;
-print "<html><head><title>time</time><meta http-equiv='refresh' content='1'></head><body>";
+print start_html;
 open(IFD,"<visitors.txt");
 $count=<IFD>;
 
