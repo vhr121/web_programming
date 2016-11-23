@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="vtu_style.css"?>
+<vtu>
+    <student>
+        <name>Veeresh H R</name>
+        <usn>1mv13cs121</usn>
+        <branch>CSE</branch>
+        <college>SIRMVIT</college>
+    </student>
+    
+    <student>
+        <name>ram</name>
+        <usn>1MV13cs122</usn>
+        <branch>CSE</branch>
+        <college>SIRMVIT</college>
+    </student>
+    
+    <student>
+        <name>roshni</name>
+        <usn>1MV13cs123</usn>
+        <branch>CSE</branch>
+        <college>SIR MVIT</college>
+    </student>
+
+</vtu>
+
